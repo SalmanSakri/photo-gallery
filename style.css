@@ -271,7 +271,12 @@ h1.heading {
       width: 100px;
     height: 150px;
     margin: 5px;
+    cursor: pointer;
     border-radius: 20px;
+    transition: .2s linear;
+}
+.imgcontaner .img img:hover{
+    transform: scale(1.1);
 }
 
 .img.hide{
