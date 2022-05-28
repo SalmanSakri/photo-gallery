@@ -10,7 +10,15 @@
 </head>
 
   <body onload="hello()">
-
+  	<div id="loader">
+		<div class="cricle" dots="100">
+			<div class="point" style="--i: 1"></div>
+			<div class="point" style="--i: 2"></div>
+			<div class="point" style="--i: 3"></div>
+		</div>
+		<span>Loading...</span>
+		
+	</div>
   <div class="menu">
 	  <h1 class="heading">HOME</h1>
 
@@ -40,10 +48,11 @@
 
 
 <div class="paregrap">
-<p>this website is make by me. i hope is a perfect website. <br> some information of myself :<br>
-	1) i pass 10th in s.c.d barafivala school andheri(w). whith frist class marks. <br>
-	2) i pass 12th  taking with science strem in valia college andheri(w). <br>
-	3) i study gradute degree in bscit. <br> 
+<p> some information of myself :<br>
+	1) i complete 10th in 2019 whith frist class marks. <br>
+	2) i complete 12th in 2021. <br>
+	3) i currently study bachelor of science in information tachnology baclare 
+	. <br> 
 	4) this is my  mini wibsite project 
 	 </p>
 	 </div>
@@ -70,17 +79,35 @@
 
 	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 		
-	<script>     
+	<script>   
+
+	var preloader = document.getElementById('loader');
+
+	 
+
         function hello () {
-        	alert("Hii , I an salman sakri.");
+        	preloader.style.display = 'none';
+
         }
 
+        const circle = document.querySelector('.cricle');
+        const dots = circle.getAttribute('dots')
+        var points = "";
+        var rotate = 360/dots;
+        for(let i = 0; i < dots; i++) {
+	points += '<div class="point" style="--i: ${i}; --rot: $ {cricle}"></div>'
 
-         function  Togglemenu() {
+}
+circle.innerHTML =points;
+	
+
+ function  Togglemenu() {
+
       const menutoggle = document.querySelector('.toggle');
       const sidebar = document.querySelector('.sidebar');
-           menutoggle.classList.toggle('active');
-          sidebar.classList.toggle('active');
+
+      menutoggle.classList.toggle('active');
+      sidebar.classList.toggle('active');
      }
 	</script>	
 </body>

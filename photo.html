@@ -10,6 +10,16 @@
 
 </head>
 <body>
+	<body onload="hello()">
+  	<div id="loader">
+		<div class="cricle" dots="100">
+			<div class="point" style="--i: 1"></div>
+			<div class="point" style="--i: 2"></div>
+			<div class="point" style="--i: 3"></div>
+		</div>
+		<span>Loading...</span>
+		
+	</div>
 
 <div class="menu">
 
@@ -521,6 +531,12 @@
 
 
 	<script type="text/javascript">
+
+		var preloader = document.getElementById('loader');
+	 function hello (){
+	 		preloader.style.display = 'none'
+
+	 }
 
          function  Togglemenu() {
 

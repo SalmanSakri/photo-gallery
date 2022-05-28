@@ -20,6 +20,53 @@ section{
 	padding: 0.9%;
 	padding-top: 12rem;
 }
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#loader .cricle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+#loader span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0 0 10px #64ff00;
+    letter-spacing: 2px;
+}
+#loader .point{
+        width: 220px;
+    height: 65px;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-100px);
+    animation: glow 0.8s linear infinite;
+    animation-delay: calc(var(--i)*0.008s);
+    
+}
+@keyframes glow{
+    
+        0%,100% {
+            background: #64ff00;
+            box-shadow: ;
+
+        }
+        50%{
+            background: #64ff00;
+            box-shadow: 0 0 10px  #64ff00;
+        }
+    
+}
 .menu {
         display: contents;
     justify-content: center;
