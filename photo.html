@@ -1,598 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-	
+
 	<title>photo </title>
 
 </head>
+
 <body>
-	<body onload="hello()">
-  	<div id="loader">
-		<div class="cricle" dots="100">
-			<div class="point" style="--i: 1"></div>
-			<div class="point" style="--i: 2"></div>
-			<div class="point" style="--i: 3"></div>
+
+	<body>
+		<div class="menu">
+
+			<div class="toggle" onclick="Togglemenu()">
+
+			</div>
+			<h1 class="heading">HOME</h1>
+			<nav class="sidebar">
+				<ul class="menu">
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="photo.html">PHOTO</a></li>
+					<li><a href="contect.html">CONTECT</a></li>
+				</ul>
+			</nav>
+
+
 		</div>
-		<span>Loading...</span>
-		
-	</div>
+		<div class="head">
+			<h2>MY ALL IMAGES </h2>
+		</div>
+		<ul class="filter-menu">
+			<li class="list active" data-target="all">ALL</li>
+			<li class="list" data-target="family">FAMILY</li>
+			<li class="list" data-target="mom-dad">MOM-DAD</li>
+			<li class="list" data-target="friends">FRIENDS</li>
+			<li class="list" data-target="solo">SOLO</li>
 
-<div class="menu">
-
-	<div class="toggle" onclick="Togglemenu()">
-    
-  </div> 
-	<h1 class="heading">HOME</h1>
-	<nav class="sidebar">
-		<ul class="menu">
-			<li><a  href="home.html">HOME</a></li>
-			<li><a  href="photo.html">PHOTO</a></li>
-			<li><a  href="contect.html">CONTECT</a></li>
 		</ul>
-	</nav>
-
-	
-</div>
-<div class="head">
-	<h2>MY ALL IMAGES </h2>
-</div>
-<ul class="filter-menu">
-	<li class="list active" data-target="all">ALL</li>
-	<li class="list" data-target="family">FAMILY</li>
-	<li class="list" data-target="mom-dad">MOM-DAD</li>
-	<li class="list" data-target="friends">FRIENDS</li>
-	<li class="list" data-target="solo">SOLO</li>
-	
-</ul>
-
-<div class="imgcontaner">
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-1.jpg"alt="">
-	</div>	<div class="img" data-title="solo">
-	   	<img src="Img/single.jpg"alt="">
-	</div>	
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-2.jpg"alt="">
-	</div>	
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-3.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-6.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-7.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-8.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="mom-dad">
-	   	<img src="Img/mom-dad.jpg"alt="">
-    </div>
-    
-	<div class="img" data-title="mom-dad">
-	   	<img src="Img/mom-dad-1.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="mom-dad">
-	   	<img src="Img/mom-dad-2.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="mom-dad">
-	   	<img src="Img/mom-dad-3.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="mom-dad">
-	   	<img src="Img/mom-dad-4.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="mom-dad">
-	   	<img src="Img/mom-dad-5.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="mom-dad">
-	   	<img src="Img/mom-dad-6.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-1.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-2.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-3.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-4.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-5.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-6.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-1.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-2.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-3.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-4.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-5.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-4.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-5.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-9.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-10.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-11.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-12.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-13.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-14.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-15.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-16.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-17.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-18.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-19.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-20.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-21.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-22.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-23.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-24.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-25.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-26.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-27.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-28.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-29.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-30.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-31.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="solo">
-	   	<img src="Img/single-32.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="mom-dad">
-	   	<img src="Img/mom-dad-7.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="mom-dad">
-	   	<img src="Img/mom-dad-8.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-7.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-8.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-9.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-10.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-11.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-12.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-13.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-14.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-15.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-16.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-17.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-18.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-19.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-20.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-21.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-22.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-23.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-24.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-25.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-26.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-27.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-28.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-29.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-30.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-31.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-32.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-33.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-34.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-35.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-36.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-37.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-38.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-39.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-40.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-41.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-42.jpg"alt="">
-	</div>
 
-	<div class="img" data-title="family">
-	   	<img src="Img/family-43.jpg"alt="">
-	</div>
+		<div class="imgcontaner">
 
-	<div class="img" data-title="family">
-	   	<img src="Img/family-44.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-45.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/family-46.jpg"alt="">
-	</div>
-	<div class="img" data-title="family">
-	   	<img src="Img/family-47.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-48.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-49.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-50.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="family">
-	   	<img src="Img/family-51.jpg"alt="">
-	</div>
+			<div class="img" data-title="solo">
+				<img src="Img/single-1.jpg" alt="">
+			</div>
+			<div class="img" data-title="solo">
+				<img src="Img/single.jpg" alt="">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-2.jpg" alt="">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-3.jpg" alt="">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-6.jpg" alt="">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-7.jpg" alt="">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-8.jpg" alt="">
+			</div>
+
+			<div class="img" data-title="mom-dad">
+				<img src="Img/mom-dad.jpg" alt="">
+			</div>
+
+			<div class="img" data-title="mom-dad">
+				<img src="Img/mom-dad-1.jpg" alt="">
+			</div>
+
+			<div class="img" data-title="mom-dad">
+				<img src="Img/mom-dad-2.jpg" alt=""  loading="lazy">
+			</div>
+
+			<div class="img" data-title="mom-dad">
+				<img src="Img/mom-dad-3.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="mom-dad">
+				<img src="Img/mom-dad-4.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="mom-dad">
+				<img src="Img/mom-dad-5.jpg" alt="" loading="lazy"> 
+			</div>
+
+			<div class="img" data-title="mom-dad">
+				<img src="Img/mom-dad-6.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-1.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-2.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-3.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-4.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-5.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-6.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-1.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-2.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-3.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-4.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-5.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-4.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-5.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-9.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-10.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-11.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-12.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-13.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-14.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-15.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-16.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-17.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-18.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-19.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-20.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-21.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-22.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-23.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-24.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-25.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-26.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-27.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-28.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-29.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-30.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-31.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="solo">
+				<img src="Img/single-32.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="mom-dad">
+				<img src="Img/mom-dad-7.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="mom-dad">
+				<img src="Img/mom-dad-8.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-7.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-8.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-9.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-10.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-11.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-12.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-13.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-14.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-15.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-16.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-17.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-18.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-19.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-20.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-21.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-22.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-23.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-24.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-25.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-26.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-27.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-28.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-29.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-30.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-31.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-32.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-33.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-34.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-35.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-36.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-37.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-38.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-39.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-40.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-41.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-42.jpg" alt="" loading="lazy">
+			</div>
 
-	<div class="img" data-title="family">
-	   	<img src="Img/family-52.jpg"alt="">
-	</div>
+			<div class="img" data-title="family">
+				<img src="Img/family-43.jpg" alt="" loading="lazy">
+			</div>
 
-	<div class="img" data-title="family">
-	   	<img src="Img/family-53.jpg"alt="">
-	</div>
+			<div class="img" data-title="family">
+				<img src="Img/family-44.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-45.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/family-46.jpg" alt="" loading="lazy">
+			</div>
+			<div class="img" data-title="family">
+				<img src="Img/family-47.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-48.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-49.jpg" alt="" loading="lazy">
+			</div>
 
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-6.jpg"alt="">
-	</div>
+			<div class="img" data-title="family">
+				<img src="Img/family-50.jpg" alt="" loading="lazy">
+			</div>
 
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-7.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-8.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-9.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-10.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-11.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-12.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-13.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-14.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-15.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-16.jpg"alt="">
-	</div>
-
-	<div class="img" data-title="friends">
-	   	<img src="Img/friends-17.jpg"alt="">
-	</div>
-
-</div>
-
-<div class="popup-img">
-	<img class="popup" src="Img/cross.png" alt="">
-	<img class="popo"img src="Img/friends-17.jpg"alt="">
-</div>
-
-
-<section class="contect">
-
-	<div class="body">
-	<h2 class="body-pera">you can visite following account</h2>
-<ul class="ul">
-    <li style="--clr:#1877f2;">
-        <a href="https://www.facebook.com/salman.sakri/"><i class="fa-brands fa-facebook-f"></i></a>
-    </li>
-    <li style="--clr:#c32aa3;">
-        <a href="https://www.instagram.com/itzz_sal_lu/"><i class="fa-brands fa-instagram"></i></a>
-    </li>
-    <li style="--clr: #1da1f2;">
-        <a href="https://twitter.com/salman_sakri"><i class="fa-brands fa-twitter"></i></a>
-    </li>
-    <li style="--clr:#0e76a8;">
-        <a href="https://www.linkedin.com/in/salman-sakri-6646a5226/"><i class="fa-brands fa-linkedin-in"></i></a>
-    </li>
-</ul>
-</div>
-</section>
-
-<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
-
-
-
-	<script type="text/javascript">
-
-		var preloader = document.getElementById('loader');
-	 function hello (){
-	 		preloader.style.display = 'none'
-
-	 }
-
-         function  Togglemenu() {
-
-      const menutoggle = document.querySelector('.toggle');
-      const sidebar = document.querySelector('.sidebar');
-
-      menutoggle.classList.toggle('active');
-      sidebar.classList.toggle('active');
-     }
-</script>
-
-<script type="text/javascript">
+			<div class="img" data-title="family">
+				<img src="Img/family-51.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-52.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="family">
+				<img src="Img/family-53.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-6.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-7.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-8.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-9.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-10.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-11.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-12.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-13.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-14.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-15.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-16.jpg" alt="" loading="lazy">
+			</div>
+
+			<div class="img" data-title="friends">
+				<img src="Img/friends-17.jpg" alt="" loading="lazy">
+			</div>
+
+		</div>
+
+		<div class="popup-img">
+			<img class="popup" src="Img/cross.png" alt="" loading="lazy">
+			<img class="popo" img src="Img/friends-17.jpg" alt="" loading="lazy">
+		</div>
+
+
+		<section class="contect">
+
+			<div class="body">
+				<h2 class="body-pera">you can visite following account</h2>
+				<ul class="ul">
+					<li style="--clr:#1877f2;">
+						<a href="https://www.facebook.com/salman.sakri/"><i class="fa-brands fa-facebook-f"></i></a>
+					</li>
+					<li style="--clr:#c32aa3;">
+						<a href="https://www.instagram.com/itzz_sal_lu/"><i class="fa-brands fa-instagram"></i></a>
+					</li>
+					<li style="--clr: #1da1f2;">
+						<a href="https://twitter.com/salman_sakri"><i class="fa-brands fa-twitter"></i></a>
+					</li>
+					<li style="--clr:#0e76a8;">
+						<a href="https://www.linkedin.com/in/salman-sakri-6646a5226/"><i
+								class="fa-brands fa-linkedin-in"></i></a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+
+
+
+		<script type="text/javascript">
+			function Togglemenu() {
+
+				const menutoggle = document.querySelector('.toggle');
+				const sidebar = document.querySelector('.sidebar');
 		
 
+				menutoggle.classList.toggle('active');
+				sidebar.classList.toggle('active');
 
-		document.querySelectorAll('.imgcontaner img').forEach(img =>{
-			img.onclick = () =>{
-			document.querySelector('.popup-img').style.display = 'block';
+			}
+		</script>
 
-			document.querySelector('img.popo').src = img.getAttribute('src')
-
-		}
-		document.querySelector('.popup').onclick = () =>{
-			document.querySelector('.popup-img').style.display = 'none';
-		}
-			
-		});
-
-</script>
+		<script type="text/javascript">
 
 
-<script type="text/javascript">
 
+			document.querySelectorAll('.imgcontaner img').forEach(img => {
+				img.onclick = () => {
+					document.querySelector('.popup-img').style.display = 'block';
 
-		let list = document.querySelectorAll('.list');
-		let item = document.querySelectorAll('.img');
+					document.querySelector('img.popo').src = img.getAttribute('src')
 
-		for(let i = 0; i<list.length; i++){
-			list[i].addEventListener('click', function(){
-				for(let j =0; j<list.length; j++){
-					list[j].classList.remove('active')
 				}
-				this.classList.add('active');
-				let datafilter = this.getAttribute('data-target');
+				document.querySelector('.popup').onclick = () => {
+					document.querySelector('.popup-img').style.display = 'none';
+				}
 
-				 for(let k = 0; k<item.length; k++){
-				 	item[k].classList.add('hide');
-				 	if(item[k].getAttribute('data-title') == datafilter || datafilter == "all"){
-				 		item[k].classList.remove('hide');
-				 		item[k].classList.add('active');
-				 	}
-				 }
+			});
 
-			})
-		}
-</script>
-</body>
+		</script>
+
+
+		<script type="text/javascript">
+
+
+			let list = document.querySelectorAll('.list');
+			let item = document.querySelectorAll('.img');
+
+			for (let i = 0; i < list.length; i++) {
+				list[i].addEventListener('click', function () {
+					for (let j = 0; j < list.length; j++) {
+						list[j].classList.remove('active')
+					}
+					this.classList.add('active');
+					let datafilter = this.getAttribute('data-target');
+
+					for (let k = 0; k < item.length; k++) {
+						item[k].classList.add('hide');
+						if (item[k].getAttribute('data-title') == datafilter || datafilter == "all") {
+							item[k].classList.remove('hide');
+							item[k].classList.add('active');
+						}
+					}
+
+				})
+			}
+		</script>
+	</body>
 
 </html>

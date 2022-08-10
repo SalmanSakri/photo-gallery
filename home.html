@@ -9,106 +9,79 @@
 	<title>HOME</title>
 </head>
 
-  <body onload="hello()">
-  	<div id="loader">
-		<div class="cricle" dots="100">
-			<div class="point" style="--i: 1"></div>
-			<div class="point" style="--i: 2"></div>
-			<div class="point" style="--i: 3"></div>
+<body>
+	<div class="menu">
+		<h1 class="heading">HOME</h1>
+
+		<div class="toggle" onclick="Togglemenu()">
+
 		</div>
-		<span>Loading...</span>
-		
+		<nav class="sidebar">
+			<ul class="menu">
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="photo.html">PHOTO</a></li>
+				<li><a href="contect.html">CONTECT</a></li>
+			</ul>
+		</nav>
+
+
 	</div>
-  <div class="menu">
-	  <h1 class="heading">HOME</h1>
 
-  <div class="toggle" onclick="Togglemenu()">
-    
-  </div> 
-	<nav class="sidebar">
-		<ul class="menu">
-			<li><a  href="home.html">HOME</a></li>
-			<li><a  href="photo.html">PHOTO</a></li>
-			<li><a  href="contect.html">CONTECT</a></li>
+	<section class="home">
+		<div class="content">
+			<h1>Hii, I am <br><span class="color">salman lookman sakri.</span></h1>
+		</div>
+
+
+		<div class="image">
+			<img src="img/single-18.jpg" alt="">
+		</div>
+
+
+		<div class="paregrap">
+			<p> some information of myself :<br>
+				1) I complete SSC in 2019 whith frist class marks. <br>
+				2) I complete HSC in 2021. <br>
+				3) I currently study bachelor of science in information tachnology
+				. <br>
+				4) this is my mini wibsite project
+			</p>
+		</div>
+	</section>
+
+
+	<div class="body">
+		<h2 class="body-pera">you can visite following account</h2>
+		<ul class="ul">
+			<li style="--clr:#1877f2;">
+				<a href="https://www.facebook.com/salman.sakri/"><i class="fa-brands fa-facebook-f"></i></a>
+			</li>
+			<li style="--clr:#c32aa3;">
+				<a href="https://www.instagram.com/itzz_sal_lu/"><i class="fa-brands fa-instagram"></i></a>
+			</li>
+			<li style="--clr: #1da1f2;">
+				<a href="https://twitter.com/salman_sakri"><i class="fa-brands fa-twitter"></i></a>
+			</li>
+			<li style="--clr:#0e76a8;">
+				<a href="https://www.linkedin.com/in/salman-sakri-6646a5226/"><i
+						class="fa-brands fa-linkedin-in"></i></a>
+			</li>
 		</ul>
-	</nav>
-
-	
-</div>
-
-<section class="home">
-<div class="content">
-	<h1>Hii, I am <br><span class="color">salman lookman sakri.</span></h1>
-</div>
-
-
-       <div class="image">
-              <img src="img/single-18.jpg" alt="">
-        </div>
-
-
-<div class="paregrap">
-<p> some information of myself :<br>
-	1) i complete 10th in 2019 whith frist class marks. <br>
-	2) i complete 12th in 2021. <br>
-	3) i currently study bachelor of science in information tachnology baclare 
-	. <br> 
-	4) this is my  mini wibsite project 
-	 </p>
-	 </div>
-</section>
-
-
-<div class="body">
-	<h2 class="body-pera">you can visite following account</h2>
-<ul class="ul">
-    <li style="--clr:#1877f2;">
-        <a href="https://www.facebook.com/salman.sakri/"><i class="fa-brands fa-facebook-f"></i></a>
-    </li>
-    <li style="--clr:#c32aa3;">
-        <a href="https://www.instagram.com/itzz_sal_lu/"><i class="fa-brands fa-instagram"></i></a>
-    </li>
-    <li style="--clr: #1da1f2;">
-        <a href="https://twitter.com/salman_sakri"><i class="fa-brands fa-twitter"></i></a>
-    </li>
-    <li style="--clr:#0e76a8;">
-        <a href="https://www.linkedin.com/in/salman-sakri-6646a5226/"><i class="fa-brands fa-linkedin-in"></i></a>
-    </li>
-</ul>
-</div>
+	</div>
 
 	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-		
-	<script>   
 
-	var preloader = document.getElementById('loader');
+	<script>
 
-	 
 
-        function hello () {
-        	preloader.style.display = 'none';
+		function Togglemenu() {
 
-        }
+			const menutoggle = document.querySelector('.toggle');
+			const sidebar = document.querySelector('.sidebar');
 
-        const circle = document.querySelector('.cricle');
-        const dots = circle.getAttribute('dots')
-        var points = "";
-        var rotate = 360/dots;
-        for(let i = 0; i < dots; i++) {
-	points += '<div class="point" style="--i: ${i}; --rot: $ {cricle}"></div>'
-
-}
-circle.innerHTML =points;
-	
-
- function  Togglemenu() {
-
-      const menutoggle = document.querySelector('.toggle');
-      const sidebar = document.querySelector('.sidebar');
-
-      menutoggle.classList.toggle('active');
-      sidebar.classList.toggle('active');
-     }
-	</script>	
+			menutoggle.classList.toggle('active');
+			sidebar.classList.toggle('active');
+		}
+	</script>
 </body>
 </html>
